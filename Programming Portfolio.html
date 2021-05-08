@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>Programming Portfolio Ng Chin Ern</head>
+
+<h1> Welcome to my Web programming Self-study portfolio!</h1>
+
+<body>
+<h>First let me get this out of the way</h>
+<a href="www.w3schools.com">W3Schools is full of deprecated web-programming tools, with Var being deprecated pre-ES6 and let and const being the most common feature now.</a>
+
+
+<p> Headers include h1 to h6, in descending order of size, biggest to smallest.</p>
+
+<p id="lorem">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta dolorem quisquam tenetur consequuntur possimus, hic doloribus ad eaque minus cum accusantium consequatur adipisci, dolorum ducimus pariatur vero. Maxime, itaque?
+</p>
+
+<p> JavaScript Study-notes
+    Guard Clauses > nested IF statements (08/05/21)
+
+
+function numberToAccountingString(number) {
+ If (number != null) {
+    If (number < 0) {
+       return ‘(${Math.abs(number)})’
+    } else {
+    return number.toString()
+     }
+       }
+}
+
+console.log(numberToAccountingString(undefined))
+console.log(numberToAccountingString(0))
+console.log(numberToAccountingString(10))
+console.log(numberToAccounting(-5))
+
+
+Console results:
+Undefined
+0
+10
+(-5)
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Math.abs()
+The Math.abs() function returns the absolute value of a number. That is, it returns x if x is positive or zero, and the negation of x if x is negative.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Deprecation of Var on ES6 and the use of let and const
+
+Var is a global-scoped which is not confined to the end of a block. Var can be redeclared while Let cannot be redeclared. [Deprecated]
+Let is a block-scoped function which is confined to the end of a block.
+
+Example:
+If (true) {
+ varVariable = “this is true”
+ }
+
+varVariable = “this is false”
+console.log(VarVariable)
+
+If (true) {
+Let LetVariable = “this is true”
+ }
+Let LetVariable = “this is false”
+
+console.log(LetVariable)
+
+Console results:
+This is true
+This is false
+Undefined Syntax Error
+
+
+</p>
+
+
+
+
+</body>
+
+
+
+</html>
